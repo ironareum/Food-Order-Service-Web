@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+/* 부트스트랩 */
+@import url(//cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css);
+
+/*  폰트 */
+@import url(//fonts.googleapis.com/earlyaccess/hanna.css);
+@import url(//fonts.googleapis.com/css?family=Black+Han+Sans:400);
+@import url(//fonts.googleapis.com/css?family=Do+Hyeon:400);
+@import url(//fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap);
+@import url(//fonts.googleapis.com/css2?family=Nanum+Gothic&family=Sunflower:wght@300&display=swap);
+/* 커스텀 */
+:root{
+	/* Color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --grey-dark-color: #909090;
+  --grey-light-color: #e0e0e0;
+  
+  --wine-dark:#793d34;
+  --peach:#e8a45d;
+  
+ --pink-peach:#ff9e80;
+ --pink-peach-dark:#c96f53;
+ --pink-peach-light:#ffd0b0;
+  
+/*   --green-dark: #003d00; 
+  --green-primary: #33691e;
+  --green-light: #629749; 
+  --yellowgreen-primary: #fdd835;
+  --yellowgreen-dark: #c6a700;
+  --yellowgreen-light: #ffff6b;*/
+
+
+  --green-dark: #003d00;
+  --green-primary: #33691e;
+  --green-light: #629749;
+  
+  --yellowgreen-primary: #fdd835;
+  --yellowgreen-dark: #c6a700;
+  --yellowgreen-light: #ffff6b;
+
+
+  /* Size */
+  --padding: 12px;
+  --padding-big: 15px;
+  --avartar-size: 36px;
+  --menuImg-size: 180px;
+
+  /* Font Size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+  
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  
+  box-sizing: border-box;
+} 
+
+html, body {
+	height:100vh;
+	font-family: 'Do Hyeon', sans-serif;	
+  /* padding-bottom: 180px;  */
+} 
+p, h5, span {
+	/* font-family: 'Sunflower', sans-serif;  */
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+li {
+  list-style: none;
+}
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {
+    border-color: var(--green-dark);
+    box-shadow: 0 1px 1px var(--green-dark) inset, 0 0 8px var(--green-light);
+    outline: 0 none;
+}
+
+h1, h3 {
+	/*  font-family: 'Hanna', sans-serif; */
+	/* font-family: 'Black Han Sans', sans-serif; */
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+.footer{
+	display:flex;
+	width: 100%;
+	background-color: var(--green-dark);
+}
+.footerBox{
+	display:flex;
+	bottom: 0;
+	width: 100%;
+}
+.footerBox .footerBlock {
+	width: 100%;
+	padding: 50px;
+	
+}
+
+.showBlock {
+	display: block;
+}
+.hideBlock {
+	display: none;
+}
+/* ======================== */
+/* navbar  */
+.mainNavBar {
+	font-family: 'Do Hyeon', sans-serif;
+	/* height:80px; */
+	font-size: 22px;
+	background-color:var(--green-dark);
+} 
+.mainNavBar .logoImg {
+	width:190px; 
+	-webkit-filter: opavity(.5) drop-shadow(0 0 0 green);
+	filter: opavity(.5) drop-shadow(0 0 0 green);
+}
+.mainNavBar .nav-item {
+	padding-left: 25px;
+}
+
+/* ======================== */
+/* bootstrap 재설정  */
+.nav-link {
+	color: white;
+}
+
+.card {
+	border: none;
+}
+.card-title {
+	color: var(--green-dark);
+}
+
+.fa-star {
+	color: var(--green-light);
+}
+/* .pagination, .Page.navigation.example {
+	color: var(--green-dark);
+	background-color:  var(--green-dark);
+}
+.page-item.active_, .page-link_ {
+	z-index: 3;
+    color: #fff;
+	background-color:  var(--green-dark);
+    border-color: var(--green-light);
+} */
+/* ======================== */
+/* index 페이지  ===============================*/
+.main {
+	display: absoulte;
+	padding:0;
+	align-items: center;
+	border: none;
+} 
+.main .card, img {
+	border-radius: 0;
+}
+
+.main .searchBlock {
+	display:flex;
+	margin: auto;	
+}
+.main .searchBlock .searchBox1{
+	display:inline-block;
+	/* align-content: center; */
+	margin: auto;
+	width:600px;;
+}
+.main .searchBlock .searchTitile .card-title{
+	display:flex;
+	flex-direction: column;
+	margin: auto;
+	line-height: 110%;
+	/* color: #003d00; */
+}
+.main .searchBlock .searchTitile span{
+	font-family: 'Do Hyeon', sans-serif;
+	display:inline-block;
+	margin: auto;
+	font-size: 80px;	
+}
+
+.main .searchBlock .searchBox {
+	display:flex;
+}
+
+.main .searchBlock .searchBox .searchInput {
+	height:50px;
+	border-radius: 25px;
+	vertical-align: middle;
+	margin: auto 0;
+}
+
+.main .searchBlock .searchBox .searchButton {
+	height:50px;
+	border-radius: 25px;
+}
+
+/* ======================== */
+/* map 페이지  ===============================*/
+.shops .wrapper{
+	display:flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.shops .main-content {
+	width: 100%;
+	display:flex;
+	flex: 1;
+	background: white;
+}
+
+.shops .main-content .left {
+	flex: 1 1 30%;
+	box-sizing: border-box;
+	background: white;
+}
+.shops .main-content .left .shopList{
+	height:100%;
+	
+}
+
+.shops .main-content .right {
+	flex: 1 1 70%;
+	box-sizing: border-box;
+	background: green;
+}
+
+.shops .main-content .mapBox{
+	height: 100vh;
+}
+
+.shopList .shops .shopInfo {
+	display: flex;
+	flex-direction: column;
+	/* background-color: #629749; */
+	padding: 10px; 
+	border-top: 1px solid var(--green-dark);
+	color: var(--green-dark);
+}
+.shopList .shops .shopInfo .button {
+	display: flex;
+	align-items: flex-start; 
+}
+
+.shopList .shops .shopBox .moreInfo {
+	color: var(--green-dark);
+	/* background-color: var(--yellowgreen-light); */
+	height: 40px;
+}
+
+/* eaShop  =============================== */
+.eaHeader, .eaHeader img {
+	min-width: 700px;
+}
+.eaHeader .card-img-overlay{
+	display: flex;
+	flex-direction: column;
+	vertical-align: middle;
+	margin: auto;
+}
+.eaHeader .card-img-overlay .infoBox {
+	display: inline-block;
+	vertical-align: middle;
+	margin: auto 0;
+	height: 300px;
+}
+.eaHeader .card-img-overlay .card-title {
+	color: var(--green-dark);
+	font-size: 70px;
+}
+.ea {
+	width: 100%;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px;
+}
+.ea .left {
+	-webkit-flex :1;
+	min-width: 800px;
+	flex: 1 ;
+	margin: 20px;
+	max-width: 900px;
+	/* box-sizing: border-box; */
+}
+.ea .right {
+	
+	margin: 20px;
+}
+.ea .eaItemList {
+	width:100%;
+	min-width: 500px; /* 추후다시정리 */
+
+}
+.ea .eaItemList .menu {
+	display: flex;
+	align-content: center;
+	width: 100%;
+	margin: var(--padding-big) 0;
+	padding: 0 5;
+}
+
+.ea .eaItemList .menu .menuInfo {
+	flex: 1 1 60%;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 5px var(--padding);
+}
+.ea .eaItemList .menu .menuInfo p {
+	text-align: left;
+	/* white-space: pre-line; */
+}
+.ea .eaItemList .menu .menuImg {
+	flex: 1 1 20%;
+	display: flex;
+	justify-content:center;
+    align-items:center;
+}
+
+.ea .eaItemList .menu .menuImg img{
+	
+	width: var(--menuImg-size);
+	height: var(--menuImg-size); /* 추후 사진 비율보고 정리 */
+	
+}
+.ea .eaItemList .menu .menuCountBox {
+	flex: 1 1 20%;
+	display:flex;
+	flex-direction: column;
+	align-items: flex-end;
+	width: 180px;
+}
+.ea .eaItemList .menu .menuCountBox .row {
+	width: 100%;
+}
+.ea .eaItemList .menu .menuCountBox .input-group{
+	display:flex;
+	width: 100%;
+}
+
+.ea .eaItemList .menu .menuCountBox .addToCart {
+	margin: 20px 0;
+}
+
+.ea .eaItemList .eaReview {
+	display:flex;
+	padding: 30px;
+	
+	/* border-bottom: 1px solid black;  */
+	flex-direction: column; 
+	align-items: column;
+}
+
+.ea .eaItemList .eaReview .oneReivew {
+	display:flex;
+	flex-direction: column;
+	padding:20px;
+	width:100%;
+	align-items: flex-start;
+}
+
+.ea .eaItemList .eaReview .oneReivew .custId{
+	display: inline-block; align-self: flex-start;
+}
+.ea .eaItemList .eaReview .oneReivew .custId span {
+	display: inline-block;
+}
+.ea .eaItemList .eaReview .oneReivew .stars {
+	align-self: flex-start;
+}
+
+.ea .eaItemList .eaReview .oneReivew .img img{
+	width: 300px;
+	
+}
+
+.ea .eaItemList .eaReview .oneReivew .img img{
+	width: 100%;
+	
+}
+
+.ea .eaItemList .marketInfo {
+	padding: 20px;
+}
+
+.ea .eaItemList .more{
+	/* display:flex; */
+	display:inline-block;
+	align-items: center;
+}
+.ea .eaItemList .more .pagination {
+	
+	align-items: center;
+}
+
+
+.ea .cart {
+	display: flex;
+	margin: 30px 0;
+	margin-left: 30px;
+	
+	width:100%;
+}
+.ea .cart .cartBox {
+	/* display:none; */
+	position: flex;
+	/* top:90px; */
+	width: 500px;
+	bottom: 10px;
+}
+
+/* login  */
+.loginBackground {
+	margin: 100px auto; 
+	background-image: linear-gradient(rgba(35, 43, 85, 0.75), rgba(35, 43, 85, 0.95)), url('${root}resources/image/food1.jpg') no-repeat center center;
+	background-size: 100% 100%;
+}
+
+/* .loginBackground card {
+	display:inline-block;
+	align-content: center;
+} */
+
+
+/* =================================== */
+@media screen and (min-width: 700px){
+	
+	
+	
+	.ea {
+		flex-direction: row;
+		padding: var(--padding) 15px;
+	}
+	.ea left {
+		flex: 1 1 70%;
+	}
+	.ea right {
+		flex: 1 1 30%;
+		min-width: 300px;
+	}
+	
+	.ea .cart .cartBox {
+	display:block;
+	position: relative;
+	top:90px;
+	width: 350px;
+	}
+}
+
+@media screen and (max-width: 400px){
+	.main .searchBlock .searchTitile .card-title{
+	display:flex;
+	flex-direction: column;
+	margin: auto;
+	line-height: 60%;
+}
+	.main .searchBlock .searchTitile span{
+	font-family: 'Do Hyeon', sans-serif;
+	display:inline-block;
+	margin: auto;
+	font-size: 40px;	
+}
+	
+}
+
+
